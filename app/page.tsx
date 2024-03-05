@@ -15,13 +15,13 @@ export default async function Home() {
               Movies Catelog
             </h1>
             <p>Explore the movies to watch</p>
-            {/* <div className="home__filters">
+            <div className="home__filters">
               <SearchBar />
-              <div className="home__filter-container">
+              {/* <div className="home__filter-container">
                 <CustomFilter title="year" />
                 <CustomFilter title="year" />
-              </div>
-            </div> */}
+              </div> */}
+            </div>
 
             {!isDataEmpty ? (
               <section>

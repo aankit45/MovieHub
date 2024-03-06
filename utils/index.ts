@@ -1,3 +1,4 @@
+
 export async function fetchMovies() {
     const headers = {
 		'X-RapidAPI-Key': '294472bf49mshf1beed13ab2db2bp1f78cajsne9f872f8233a',

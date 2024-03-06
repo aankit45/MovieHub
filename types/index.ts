@@ -6,6 +6,9 @@ export interface CustomButtonProps {
     handleClick?:
     MouseEventHandler<HTMLButtonElement>;
     btntype?: "button" | "submit";
+    textStyles?: string;
+    rightIcon?: string;
+    isDisabled?: boolean;
 }
 
 export interface SearchMoviesProps {
@@ -20,7 +23,7 @@ export interface MovieProps {
     original_title: string;
     overview: string;
     poster_path: string;
-    release_date: Date;
+    first_aired: string;
     title: string;
     contentType: string;
 }

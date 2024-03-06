@@ -6,6 +6,7 @@ import CustomFilter from './CustomFilter';
 import SearchBar from './SearchBar';
 import SearchMovies from './SearchMovies';
 import MovieCard from './MovieCard';
+import MovieDetails from './MovieDetails';
 export {
     Hero,
     CustomButton,
@@ -15,4 +16,5 @@ export {
     SearchBar,
     SearchMovies,
     MovieCard,
+    MovieDetails,
 }

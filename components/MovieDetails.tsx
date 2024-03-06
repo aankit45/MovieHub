@@ -69,9 +69,10 @@ const MovieDetails = ({ isOpen, closeModal, movie }: MovieDetailsProps) => {
                                             {movie.title}
                                         </h2>
                                         <div className="mt-3 flex flex-wrap gap-3">
-                                            {Object.entries(movie).map(([key,value]) => (
-                                                <div className="flex justify-between 
-                                                gap-5 w-full text-right" key={key}>
+                                            {Object.entries(movie).filter(([key, value]) => {
+                                                return key !== 'backdrop_path' && key !== 'poster_path' ;
+                                            }).map(([key, value]) => (
+                                                <div className="flex justify-between gap-5 w-full text-right" key={key}>
                                                     <h4 className="text-grey capitalize">{key.split('_').join('')}</h4>
                                                     <p className="text-black-400 font-semibold">{value}</p>
                                                 </div>

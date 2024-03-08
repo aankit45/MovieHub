@@ -9,7 +9,7 @@ const Hero = () => {
     <div className='hero'>
       <div className='flex-1 pt-36 padding-x'>
         <h1 className='hero__title'>
-          Let's watch a Movie
+          Let's Explore 
         </h1>
         <p className='hero__subtitle'>
           Streamline your favorite movie

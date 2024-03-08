@@ -50,7 +50,7 @@ const MovieDetails = ({ isOpen, closeModal, movie }: MovieDetailsProps) => {
                                     </button>
                                     <div className="flex-1 flex flex-col gap-3">
                                         <div className="relative w-full h-40 bg-cover bg-center rounded-lg">
-                                            <Image src={movie.poster_path} alt={"movie model"} fill priority className="object-contain" />
+                                            <Image src={movie.big_image} alt={"movie model"} fill priority className="object-contain" />
                                         </div>
                                         {/* <div className="flex gap-3">
                                             <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
@@ -70,12 +70,12 @@ const MovieDetails = ({ isOpen, closeModal, movie }: MovieDetailsProps) => {
                                         </h2>
                                         <p className="flex text-[32px] font-extrabold">
                                             <span className="self-start text-[14px] font-semibold">
-                                                {movie.overview}
+                                                {movie.description}
                                             </span>
                                         </p>
                                         <div className="mt-3 flex flex-wrap gap-3">
                                             {Object.entries(movie).filter(([key, value]) => {
-                                                return key !== 'backdrop_path' && key !== 'poster_path' && key !== 'overview';
+                                                return key !== 'image' && key !== 'big_image' && key !== 'thumbnail' && key !== 'imdb_link' && key !== 'description' && key !== 'title'
                                             }).map(([key, value]) => (
                                                 <div className="flex justify-between gap-5 w-full text-right" key={key}>
                                                     <h4 className="text-grey capitalize">{key.split('_').join('')}</h4>

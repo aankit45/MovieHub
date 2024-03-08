@@ -17,13 +17,35 @@ export interface SearchMoviesProps {
 }
 
 export interface MovieProps {
-    _id: number;
-    backdrop_path: string;
-    genres: [];
-    original_title: string;
-    overview: string;
-    poster_path: string;
-    first_aired: string;
+    rank: number;
     title: string;
-    contentType: string;
+    thumbnail: string;
+    rating: number;
+    id: number;
+    year: number
+    image: string;
+    big_image: string;
+    description: string;
+    trailer: string;
+    trailer_embed_link: string;
+    trailer_youtube_id: string;
+    genre: []
+    director: []
+    writers: []
+    imdbid: string;
+    imdb_link: string;
+}
+
+export interface FilterProps {
+    title: string;
+    year:string;
+}
+
+export interface OptionsProps {
+    title: string;
+    value: string;
+}
+export interface CustomFilterProps {
+    title: string;
+    options: OptionsProps[];
 }
